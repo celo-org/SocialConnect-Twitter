@@ -4,9 +4,9 @@
 
 <br>
 
-<p align="center">
-<video src="https://player.vimeo.com/video/828321712">
-</p>
+
+https://github.com/celo-org/SocialConnect-Twitter/assets/38040789/682d99d4-49b8-47be-851a-6f81d48a6f13
+
 
 ### Built With
 
