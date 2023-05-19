@@ -5,7 +5,7 @@
 <br>
 
 <p align="center">
-<video src="https://github.com/celo-org/SocialConnect-Twitter/assets/38040789/59d632ce-652b-477b-b625-15455f16cb96.mp4">
+<video src="https://player.vimeo.com/video/828321712">
 </p>
 
 ### Built With
