@@ -4,9 +4,7 @@
 
 <br>
 
-
-https://github.com/celo-org/SocialConnect-Twitter/assets/38040789/682d99d4-49b8-47be-851a-6f81d48a6f13
-
+https://github.com/celo-org/SocialConnect-Twitter/assets/38040789/ab7cfd0c-3b83-45f4-990c-0143c9d9033a
 
 ### Built With
 
