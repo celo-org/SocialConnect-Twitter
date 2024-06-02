@@ -21,7 +21,7 @@
         "dotenv": "^16.0.3",
         "ethers": "^5.7.2",
         "next": "13.2.4",
-        "next-auth": "^4.22.1",
+        "next-auth": "^4.24.5",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-hot-toast": "^2.4.1",
