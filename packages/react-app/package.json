@@ -16,7 +16,7 @@
         "@headlessui/react": "^1.7.13",
         "@heroicons/react": "^2.0.16",
         "@rainbow-me/rainbowkit": "^0.12.2",
-        "axios": "^1.4.0",
+        "axios": "^1.7.4",
         "blind-threshold-bls": "https://github.com/celo-org/blind-threshold-bls-wasm#3d1013af",
         "dotenv": "^16.0.3",
         "ethers": "^5.7.2",
