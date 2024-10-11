@@ -29,7 +29,7 @@
         "wagmi": "^0.12.2"
     },
     "devDependencies": {
-        "@types/node": "18.15.2",
+        "@types/node": "18.19.55",
         "@types/react": "18.0.27",
         "@types/react-dom": "18.0.11",
         "autoprefixer": "^10.4.14",
