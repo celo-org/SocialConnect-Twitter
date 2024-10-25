@@ -185,8 +185,8 @@ export default function Home({}) {
 
     return (
         <div className="flex flex-col space-y-4">
-            <div className="flex space-x-4">
-                <div className="w-[400px] border border-black p-4 flex-col flex space-y-2">
+            <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                <div className="w-full md:w-[400px] border border-black p-4 flex-col flex space-y-2 max-w-full m-4 md:m-0">
                     <h2>Registration</h2>
                     <div className="border w-full space-y-4 p-4 flex items-center flex-col border-black">
                         {isConnected && <h3>Connected as:</h3>}
@@ -196,7 +196,7 @@ export default function Home({}) {
                         {status === "unauthenticated" ? (
                             <button
                                 onClick={() => signIn("twitter")}
-                                className="border-2 border-black px-4 py-2"
+                                className="border-2 border-black px-4 py-2 w-full"
                             >
                                 Sign in with Twitter
                             </button>
@@ -238,27 +238,26 @@ export default function Home({}) {
                                     address
                                 )
                             }
-                            className="border-2 border-black px-4 py-2"
+                            className="border-2 border-black px-4 py-2 w-full"
                         >
                             Link Wallet
                         </button>
                     )}
                 </div>
-                <div className="w-[400px] border justify-between border-black p-4 flex-col flex space-y-2">
+                <div className="w-full md:w-[400px] border justify-between border-black p-4 flex-col flex space-y-2 max-w-full m-4 md:m-0">
                     <div className="flex flex-col space-y-2">
                         <h2>Lookup</h2>
                         <input
-                            className="border border-black px-4 py-2"
+                            className="border border-black px-4 py-2 w-full"
                             placeholder="Twitter handle only (not @)"
                             value={lookupValue}
                             onChange={handleLookupValueChange}
                         />
                     </div>
                     <div className="flex flex-col justify-start h-full">
-                        {lookupResult.map((address) => {
-                            return (
-                                <div className="flex border py-2 px-4 border-black">
-                                    <a
+                        {lookupResult.map((address) => (
+                            <div className="flex border py-2 px-4 border-black w-full" key={address}>
+                                 <a
                                         href={`https://explorer.celo.org/address/${address}`}
                                         target="_blank"
                                         key={address}
@@ -269,19 +268,18 @@ export default function Home({}) {
                                             address as string
                                         ).slice(-10)}`}</h4>
                                     </a>
-                                </div>
-                            );
-                        })}
+                            </div>
+                        ))}
                     </div>
                     <button
                         onClick={() => lookupAddresses(lookupValue)}
-                        className="border-2 border-black px-4 py-2"
-                        disabled={lookupValue == ""}
+                        className="border-2 border-black px-4 py-2 w-full"
+                        disabled={lookupValue === ""}
                     >
                         Search
                     </button>
                 </div>
-                <div className="w-[400px] border border-black p-4 flex-col flex space-y-2">
+                <div className="w-full md:w-[400px] border border-black p-4 flex-col flex space-y-2 max-w-full m-4 md:m-0">
                     <h2>Revoke</h2>
                     <div className="border w-full space-y-4 p-4 flex items-center flex-col border-black">
                         {isConnected && <h3>Connected as:</h3>}
@@ -291,7 +289,7 @@ export default function Home({}) {
                         {status === "unauthenticated" ? (
                             <button
                                 onClick={() => signIn("twitter")}
-                                className="border-2 border-black px-4 py-2"
+                                className="border-2 border-black px-4 py-2 w-full"
                             >
                                 Sign in with Twitter
                             </button>
@@ -316,7 +314,7 @@ export default function Home({}) {
                                 </div>
                                 <div className="flex flex-col w-full space-y-2">
                                     <button
-                                        className="border-2 border-black px-4 py-2"
+                                        className="border-2 border-black px-4 py-2 w-full"
                                         onClick={() => signOut()}
                                     >
                                         Sign Out
@@ -333,7 +331,7 @@ export default function Home({}) {
                                     address
                                 )
                             }
-                            className="border-2 border-black px-4 py-2"
+                            className="border-2 border-black px-4 py-2 w-full"
                         >
                             Unlink Wallet
                         </button>
@@ -341,8 +339,8 @@ export default function Home({}) {
                 </div>
             </div>
             {issuer && (
-                <div className="border flex py-2 justify-center border-black">
-                    <h3>
+                <div className="border flex py-2 justify-center border-black m-4 md:m-0">
+                    <h3 className="text-center">
                         Issuer Address:{" "}
                         <a
                             href={`https://explorer.celo.org/alfajores/address/${issuer.address}`}
